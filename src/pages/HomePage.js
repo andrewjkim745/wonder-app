@@ -94,6 +94,7 @@ export default class HomePage extends React.Component {
                                             d={day}
                                             db={this.props.navigation.state.params.db}
                                         /> */}
+                                        <EmptyDailyPlanner />
                                     </View>
                                 </View>
                             );
