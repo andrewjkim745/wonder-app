@@ -18,6 +18,10 @@
 		2DCD954D1E0B4F2C00145EB5 /* wonderFrontTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* wonderFrontTests.m */; };
 		3B87793B0E05C45BD759BCE8 /* libPods-whichdayz-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 22CC92CD2901AE4606D7DC98 /* libPods-whichdayz-tvOSTests.a */; };
 		40321830E872D49C0A27C5AD /* libPods-whichdayz-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E32864B1CDF64BADA9FE9F51 /* libPods-whichdayz-tvOS.a */; };
+		5FA67DA824FD3A8200C90E30 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5FA67DA724FD3A8200C90E30 /* GoogleService-Info.plist */; };
+		5FA67DA924FD3A8200C90E30 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5FA67DA724FD3A8200C90E30 /* GoogleService-Info.plist */; };
+		5FA67DAA24FD3A8200C90E30 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5FA67DA724FD3A8200C90E30 /* GoogleService-Info.plist */; };
+		5FA67DAB24FD3A8200C90E30 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5FA67DA724FD3A8200C90E30 /* GoogleService-Info.plist */; };
 		98286525617A65A6E43068FA /* libPods-whichdayz.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E1DC24055BBE56FD47A64A39 /* libPods-whichdayz.a */; };
 		989856DBC5532F123D7C1F81 /* libPods-whichdayzTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0539D21A8B221B520E6B3205 /* libPods-whichdayzTests.a */; };
 /* End PBXBuildFile section */
@@ -60,6 +64,7 @@
 		2F44BF9164F560110F7055D2 /* Pods-whichdayzTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-whichdayzTests.release.xcconfig"; path = "Target Support Files/Pods-whichdayzTests/Pods-whichdayzTests.release.xcconfig"; sourceTree = "<group>"; };
 		4147B865276620AA7040E834 /* Pods-wonderFront-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wonderFront-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-wonderFront-tvOSTests/Pods-wonderFront-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		57D5E28246B0642088F336B7 /* Pods-wonderFront.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wonderFront.release.xcconfig"; path = "Target Support Files/Pods-wonderFront/Pods-wonderFront.release.xcconfig"; sourceTree = "<group>"; };
+		5FA67DA724FD3A8200C90E30 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		6D6A8D0C4837A8DB5F1C1C08 /* Pods-whichdayz-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-whichdayz-tvOS.release.xcconfig"; path = "Target Support Files/Pods-whichdayz-tvOS/Pods-whichdayz-tvOS.release.xcconfig"; sourceTree = "<group>"; };
 		772C9DCC17AABA1747BA65FA /* Pods-wonderFront-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wonderFront-tvOS.release.xcconfig"; path = "Target Support Files/Pods-wonderFront-tvOS/Pods-wonderFront-tvOS.release.xcconfig"; sourceTree = "<group>"; };
 		830C2BFA4358E107457E0076 /* Pods-wonderFront-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wonderFront-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-wonderFront-tvOS/Pods-wonderFront-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
@@ -138,6 +143,7 @@
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
+				5FA67DA724FD3A8200C90E30 /* GoogleService-Info.plist */,
 				13B07FB11A68108700A75B9A /* LaunchScreen.xib */,
 				13B07FB71A68108700A75B9A /* main.m */,
 			);
@@ -350,6 +356,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5FA67DA924FD3A8200C90E30 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -359,6 +366,7 @@
 			files = (
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
+				5FA67DA824FD3A8200C90E30 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -367,6 +375,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */,
+				5FA67DAA24FD3A8200C90E30 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -374,6 +383,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5FA67DAB24FD3A8200C90E30 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
