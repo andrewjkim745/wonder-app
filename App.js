@@ -4,23 +4,25 @@ import { createSwitchNavigator, createAppContainer } from 'react-navigation';
 
 
 import Splash from './src/pages/Splash';
-import FacebookLogin from './src/pages/FacebookLogin';
-import Registration from './src/pages/Registration';
+// import FacebookLogin from './src/pages/FacebookLogin';
+// import Registration from './src/pages/Registration';
 import HomePage from './src/pages/HomePage';
-import Signin from './src/pages/Signin';
+// import Signin from './src/pages/Signin';
 import Profile from './src/pages/Profile';
 import ClientList from './src/pages/ClientList';
+import LoginScreen from './src/pages/LoginScreen'
 
 
 const SplashStack = createSwitchNavigator (
   {
-    Splash,
+    // Splash,
+    LoginScreen
     // FacebookLogin,
-    Registration,
+    // Registration,
     // Signin
   },
   {
-    initialRouteName: 'Splash',
+    initialRouteName: 'LoginScreen',
   }
 )
 
