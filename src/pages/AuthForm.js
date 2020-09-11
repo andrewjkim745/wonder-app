@@ -16,6 +16,7 @@ displayNameInput = (
     style={styles.formInput}
     onChangeText={text => props.setFieldValue('displayName', text)}
     placeholder='Display Name'
+    autoCapitalize={false}
     />
     <Text style={styles.validationText}>{props.errors.displayName}</Text>
 </View>
@@ -28,14 +29,18 @@ return (
             <TextInput
             style={styles.formInput}
             onChangeText={text => props.setFieldValue('email', text)}
-            placeholder='email'
+            placeholder='Email'
+            autoCapitalize={false}
+
             />
             <Text style={styles.validationText}> {props.errors.email}</Text>
             <TextInput
             style={styles.formInput}
             secureTextEntry={true}
             onChangeText={text => props.setFieldValue('password', text)}
-            placeholder='password'
+            placeholder='Password'
+            autoCapitalize={false}
+
             />
             <Text style={styles.validationText}> {props.errors.password}</Text>
             <Button
@@ -47,7 +52,7 @@ return (
             color='black'
             buttonStyle={styles.switchButton}
             onPress={() => props.switchAuthMode()}
-            title={props.authMode === 'login' ? 'Switch to Signup' : 'Switch to Login'} />
+            title={props.authMode === 'login' ? 'Create an Account' : 'Already a member?'} />
         </View>
     );
 }
@@ -58,6 +63,7 @@ marginBottom: 60
 },
 container: {
 flex: 1,
+backgroundColor: '#30EA8A',
 justifyContent: 'center',
 alignItems: 'center',
 },
@@ -70,7 +76,7 @@ alignSelf: 'center'
 formInput: {
 width: 300,
 height: 50,
-borderColor: '#B5B4BC',
+borderColor: '#fff',
 borderWidth: 1,
 marginBottom: 16,
 padding: 8
@@ -78,11 +84,17 @@ padding: 8
 loginButton: {
 width: 200,
 marginBottom: 16,
-backgroundColor: '#6f37be',
+backgroundColor: '#30EA8A',
+borderWidth: 1,
+borderRadius: 10,
+borderColor: 'white'
 },
 switchButton: {
 width: 200,
-backgroundColor: '#3f51b5'
+backgroundColor: '#30EA8A',
+borderWidth: 1,
+borderRadius: 10,
+borderColor: 'white'
 }
 });
 
