@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { StyleSheet, Text, View } from 'react-native'
+import { StyleSheet, Text, LayoutAnimation} from 'react-native'
 import Center from '../components/Center'
 import { TouchableOpacity } from 'react-native-gesture-handler'
 import firebase from 'react-native-firebase'
@@ -7,16 +7,19 @@ import firebase from 'react-native-firebase'
 export default function HomeScreen() {
     const [email, setEmail] = useState('')
     const [displayName, setDisplayName] = useState('')
+    
     useEffect(() => {
         console.log(firebase.auth().currentUser);
         const { email, displayName } = firebase.auth().currentUser;
         setEmail(email)
         setDisplayName(displayName)
     }, [email, displayName])
+
     const signOut = () => {
         firebase.auth().signOut()
     }
 
+    LayoutAnimation.easeInEaseOut()
     return (
         <Center>
             <Text>{email}</Text>
