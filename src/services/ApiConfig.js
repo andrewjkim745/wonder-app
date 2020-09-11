@@ -10,8 +10,12 @@ export const signUp = ({ email, password, displayName }) => {
     firebase.auth().createUserWithEmailAndPassword(email, password)
         .then((userInfo) => {
             console.log(userInfo)
+            return userInfo.user.updateProfile({
+                displayName: displayName
+            })
             .then(() => console.log('Create Account Success'))
         })
+        .catch(err => console.error(err));
 
 }
 

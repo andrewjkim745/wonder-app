@@ -12,7 +12,7 @@ export default function HomeScreen() {
         const { email, displayName } = firebase.auth().currentUser;
         setEmail(email)
         setDisplayName(displayName)
-    }, [email])
+    }, [email, displayName])
     const signOut = () => {
         firebase.auth().signOut()
     }
@@ -20,7 +20,7 @@ export default function HomeScreen() {
     return (
         <Center>
             <Text>{email}</Text>
-            {/* <Text>{displayName}</Text> */}
+            <Text>{displayName}</Text>
             <TouchableOpacity onPress={signOut}>
                 <Text>Sign Out</Text>
             </TouchableOpacity>
