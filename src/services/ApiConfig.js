@@ -20,8 +20,15 @@ export const signOut = (onSignedOut) => {
         .then(() => console.log('Signed Out Success'))
 }
 
-export function subscribeToAuthChanges(authStateChanged) {
+export function updateAuth(authStateChanged) {
     firebase.auth().onAuthStateChanged((user) => {
         authStateChanged(user);
+    })
+}
+
+export function subscribeToAuthChanges() {
+    firebase.auth().onAuthStateChanged((user) => {
+        console.log(user);
+        return user
     })
 }

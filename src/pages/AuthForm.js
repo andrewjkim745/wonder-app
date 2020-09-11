@@ -90,7 +90,7 @@ export default withFormik({
 mapPropsToValues: () => ({ email: '', password: '', displayName: '' }),
 validationSchema: (props) => yup.object().shape({
 email: yup.string().email().required(),
-password: yup.string().min(10).required(),
+password: yup.string().min(2).required(),
 displayName: props.authMode === 'signup' ?
     yup.string().min(5).required() : null
 }),
