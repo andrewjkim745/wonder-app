@@ -6,18 +6,31 @@ export const login = ({ email, password }) => {
         .then(() => console.log('Sign In Success'))
 }
 
-export const signUp = ({ email, password, displayName }) => {
-    firebase.auth().createUserWithEmailAndPassword(email, password)
-        .then((userInfo) => {
-            console.log(userInfo)
-            return userInfo.user.updateProfile({
-                displayName: displayName
-            })
-            .then(() => console.log('Create Account Success'))
-        })
-        .catch(err => console.error(err));
+export const signUp = async ({ email, password, fullName }) => {
+    console.log('sign up great success', email,fullName);
+    const userCred = await firebase
+        .auth()
+        .createUserWithEmailAndPassword(email, password);
+    await userCred.user.updateProfile({
+        displayName: fullName
+    });
 
+    return userCred
+    // console.log(userCred);
+    // await userCred.user.sendEmailVerification();
+    // return await firebase.auth().signOut();
 }
+
+export const signUpUser = async ({ email, password, firstName, lastName }) => {
+    const userCred = await firebase
+        .auth()
+        .createUserWithEmailAndPassword(email, password);
+    await userCred.user.updateProfile({
+        displayName: `${firstName}+${lastName}`
+    });
+    await userCred.user.sendEmailVerification();
+    return await firebase.auth().signOut();
+};
 
 export const signOut = (onSignedOut) => {
     firebase.auth().signOut()
@@ -36,3 +49,38 @@ export function subscribeToAuthChanges() {
         return user
     })
 }
+
+
+// export const signInUser = async ({ email, password }) =>
+// 	firebase.auth().signInWithEmailAndPassword(email, password);
+// export const sendEmailVerification = async () =>
+// 	firebase.auth().currentUser.sendEmailVerification();
+// export const sendPasswordReset = async (email) =>
+// 	firebase.auth().sendPasswordResetEmail(firebase.auth().currentUser ?  firebase.auth().currentUser.email : email);
+// export const getAuthUser = () => firebase.auth().currentUser;
+// export const signOut = () => firebase.auth().signOut();
+// export const verifyActionCode = ({ actionCode, mode }) =>
+// 	mode == 'resetPassword'
+// 		? firebase.auth().verifyPasswordResetCode(actionCode)
+// 		: firebase.auth().applyActionCode(actionCode);
+// export const confirmPasswordReset = async ({ actionCode, newPassword }) =>
+// 	firebase.auth().confirmPasswordReset(actionCode, newPassword);
+// export const setAuthPersistence = async () => {
+// 	try {
+// 		firebase.auth().setPersistence(firebase.auth.Auth.Persistence.SESSION);
+// 	} catch (error) {
+// 		firebase.auth().setPersistence(firebase.auth.Auth.Persistence.LOCAL);
+// 		console.log(error);
+// 	}
+// };
+// export const updateEmail = (email) => firebase.auth().currentUser.updateEmail(email);
+// export const updatePassword = (password) => firebase.auth().currentUser.updatePassword(password);
+// export const reAuth = (password) => {
+// 	const user = firebase.auth().currentUser;
+// 	const credential = firebase.auth.EmailAuthProvider.credential(
+// 		user.email,
+// 		password
+// 	);
+// 	return user.reauthenticateWithCredential(credential);
+// };
+// export const deleteAccount = () => firebase.auth().currentUser.delete();
