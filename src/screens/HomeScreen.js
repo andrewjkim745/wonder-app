@@ -6,13 +6,15 @@ import firebase from 'react-native-firebase'
 
 export default function HomeScreen() {
     const [email, setEmail] = useState('')
-    const [displayName, setDisplayName] = useState('')
-    
+    const [displayName, setdisplayName] = useState('')
+
     useEffect(() => {
-        console.log(firebase.auth().currentUser);
-        const { email, displayName } = firebase.auth().currentUser;
+        console.log('this is the user',firebase.auth().currentUser);
+        const user = firebase.auth().currentUser
+        const email = user.email
+        const displayName = user.displayName
         setEmail(email)
-        setDisplayName(displayName)
+        setdisplayName(displayName)
     }, [email, displayName])
 
     const signOut = () => {
@@ -20,6 +22,7 @@ export default function HomeScreen() {
     }
 
     LayoutAnimation.easeInEaseOut()
+    // console.log(displayName);
     return (
         <Center>
             <Text>{email}</Text>
