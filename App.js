@@ -2,7 +2,9 @@ import { createAppContainer, createSwitchNavigator } from 'react-navigation';
 import { createStackNavigator } from 'react-navigation-stack';
 import HomeScreen from './src/screens/HomeScreen';
 import AuthScreen from './src/screens/AuthScreen';
-import LoadingScreen from './src/screens/LoadingScreen'
+// import LoadingScreen from './src/screens/LoadingScreen'
+import Splash from './src/pages/Splash'
+
 
 
 const AppStack = createStackNavigator({
@@ -16,12 +18,12 @@ const AuthStack = AuthScreen
 // App Container
 const App = createSwitchNavigator(
   {
-    Loading: LoadingScreen,
+    Splash: Splash,
     App: AppStack,
     Auth: AuthStack
   }, 
   {
-    initialRouteName: "Loading"
+    initialRouteName: "Splash"
   }
 )
 

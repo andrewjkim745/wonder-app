@@ -179,6 +179,7 @@ android {
 }
 
 dependencies {
+    implementation project(':react-native-linear-gradient')
 <<<<<<< HEAD
     implementation project(':react-native-image-picker')
 =======

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { api } from '../services/ApiConfig'
 import { StyleSheet, Text, View, KeyboardAvoidingView, StatusBar, AsyncStorage } from 'react-native';
 import { Button, Input } from 'react-native-elements';
+import AnimatedSplash from 'react-native-animated-splash-screen'
 
 // IMPORT PATHS
 import Empty24HrCreation from '../components/Empty24HrCreation';
@@ -75,11 +76,9 @@ export default class Registration extends Component {
         return (
             <KeyboardAvoidingView  behavior = 'padding' style ={styles.container}>
                 <StatusBar barStyle = 'light-content' />
-
                 <View style = {styles.headerContainer}>
                     <Text style = {styles.headerText}> Welcome Barista! </Text>
                 </View>
-
                 <View style = {styles.formContainer}>
                     {/* <Input
                         containerStyle = {{
