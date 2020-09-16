@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
 import { api } from '../services/ApiConfig'
-import { StyleSheet, Text, View, KeyboardAvoidingView, StatusBar } from 'react-native';
+import { StyleSheet, Text, View, KeyboardAvoidingView, StatusBar, AsyncStorage } from 'react-native';
 import { Button, Input } from 'react-native-elements';
-import { AsyncStorage } from 'react-native';
+
+// IMPORT PATHS
+import Empty24HrCreation from '../components/Empty24HrCreation';
 
 export default class Registration extends Component {
     state = {
@@ -10,7 +12,7 @@ export default class Registration extends Component {
         lastName: "",
         email: "",
         password: "",
-        newId: "",
+        newId: "", 
         profilename: "",
         errorMsg: ""
     }
@@ -22,17 +24,25 @@ export default class Registration extends Component {
             email,
             password
         } = this.state;
+        
         const data = {
-            firstName,
-            lastName,
+            // firstName,
+            // lastName,
             email,
             password
         }
-        console.log('inside handleRegister', data)
+        // console.log('inside handleRegister', data)
         api
-            .post("/register", data)
+            .post("/signup", data)
+// ****************************************************************************************************
+// we need a fail safe for when a client is already registered and re-registers with same
+// EMAIL theres a bug when this happens
             .then(response =>
-                response.status === 201 ? this.props.navigation.navigate("HomePage") : this.state.errorMsg
+                response.status === 200 ? this.props.navigation.navigate("Profile"//, {
+                    // name:data.firstName,
+                    // itemsArr:Empty24HrCreation
+                //}
+                ): this.state.errorMsg
         )
             .catch(() =>
                 this.setState({ errorMsg: "There was an error registering the account" })
@@ -48,14 +58,17 @@ export default class Registration extends Component {
             email,
             password
         }
-        console.log('inside handleLogin', data)
+        // console.log('inside handleLogin', data)
         api
-            .post("/login", data)
-            .then(response =>
-                response.status === 200 ? this.props.navigation.navigate("Signin") : this.state.errorMsg
-        )
-            .catch(() =>
-                this.setState({ errorMsg: "Your email and/or password do not match" })
+            .post("/signin", data)
+            .then(response =>{
+                // console.log(response),
+                response.status === 200 ? this.props.navigation.navigate("HomePage",{
+                    db: response.data
+                }) : this.state.errorMsg
+        })
+            .catch((err) =>
+                this.setState({ errorMsg: err })
         );
     }
     render() {
@@ -68,7 +81,7 @@ export default class Registration extends Component {
                 </View>
 
                 <View style = {styles.formContainer}>
-                    <Input
+                    {/* <Input
                         containerStyle = {{
                             width: 300,
                         }}
@@ -81,8 +94,8 @@ export default class Registration extends Component {
                         onChangeText= {(firstName) => this.setState({firstName})}
                         autoCapitalize = 'words'
                         autoCorrect = {false}
-                    />
-                    <Input
+                    /> */}
+                    {/* <Input
                         containerStyle = {{
                             width: 300,
                         }}
@@ -95,7 +108,7 @@ export default class Registration extends Component {
                         onChangeText= {(lastName) => this.setState({lastName})}
                         autoCapitalize = 'words'
                         autoCorrect = {false}
-                    />
+                    /> */}
                     <Input
                         containerStyle = {{
                             width: 300,
@@ -162,8 +175,8 @@ export default class Registration extends Component {
 
                 <View style = {styles.buttons}>
                     <Button
-                        onPress={() => this.props.navigation.navigate('FacebookLogin')}
-                        title = 'Back'
+                        // onPress={() => this.props.navigation.navigate('FacebookLogin')}
+                        // title = 'Back'
                         titleStyle = {{
                             color: 'black',
                             fontWeight: 'bold',
@@ -173,11 +186,11 @@ export default class Registration extends Component {
                             borderColor: 'black',
                             width: 100,
                         }}
-                        icon = {{
-                            type: 'font-awesome',
-                            name: 'arrow-left',
-                            size: 15,
-                        }}
+                        // icon = {{
+                        //     type: 'font-awesome',
+                        //     name: 'arrow-left',
+                        //     size: 15,
+                        // }}
                     />
                 </View>
             </KeyboardAvoidingView>

@@ -1,21 +1,22 @@
 import React, { Component } from 'react';
-import { View, StyleSheet, Text, ImageBackground, Dimensions, AsyncStorage } from 'react-native';
+import { View, StyleSheet, Text, ImageBackground, Dimensions} from 'react-native';
 import { Button, ListItem } from 'react-native-elements';
-import {Calendar, CalendarList, Agenda} from 'react-native-calendars';
-
-
+import {Agenda} from 'react-native-calendars';
 import moment from 'moment';
-import { TouchableOpacity, FlatList } from 'react-native-gesture-handler';
+
 const { width, height } = Dimensions.get('window')
+
+import EmptyDailyPlanner from '../components/EmptyDailyPlanner';
+import ClientList from './ClientList';
 
 export default class HomePage extends React.Component {
     constructor(props){
         super(props);
 
         this.state={
-            name:this.props.navigation.state.params.name,
+            // name:this.props.navigation.state.params.name,
             date:moment().format('YYYY-MM-DD'),
-            itemsArr:this.props.navigation.state.params.itemsArr
+            //itemsArr: //this.props.navigation.state.params.itemsArr
         }
     }
 
@@ -24,7 +25,7 @@ export default class HomePage extends React.Component {
         headerStyle: {
           backgroundColor: '#30EA8A',
         },
-        headerRight: (
+        headerRight: ()=>{(
             <Button
                 onPress={() => alert('This is a button!')}
                 title = {null}
@@ -38,8 +39,8 @@ export default class HomePage extends React.Component {
                     marginRight: 14.5,
                 }}
             />
-        ),
-        headerLeft: null,
+        )},
+        headerLeft:()=>{null},
     }
 
     render() {
@@ -49,6 +50,10 @@ export default class HomePage extends React.Component {
             [currDate]: [itemsArr]
         };
         let itemsObj={[currDate]:[]};
+
+        let selectedDate;
+
+        console.log('this is the selected date : ',currDate)
         return(
             <View style = {styles.container}>
             
@@ -56,54 +61,63 @@ export default class HomePage extends React.Component {
                     source = {require('../assets/homeCoffee.jpg')} 
                     style = {{width: width, height: 200,}}
                 >
-                    <Text style = {styles.imageText}>{this.state.name}</Text>
+                    {/* <Text style = {styles.imageText}>{this.state.name}</Text> */}
                 </ImageBackground>
-
-
-                <View style = {styles.dateSelector}> 
-                    <Text style = {styles.dateHeader}>You're all set!</Text>
-                </View>
 
                 <View style = {styles.dateContainer}>
                     <Agenda 
                         selected={currDate}
-                        onDayPress={(day)=>{
-                            console.log(day);
-                            // let selected=day.dateString;
-                            // pair={
-                            //     [selected]:itemsArr
-                            // }
-                        }}                        
+                        loadItemsForMonth={(month) => {
+                            // This prop gets triggered during scrolling potential to drive up
+                            // API cost
+                            // console.log('API CALL PROBABLY SHOULD HAPPEN HERE TO COLLECT ALL DATA')
+                        }}
+                        pastScrollRange={3}
+                        futureScrollRange={3}
+                        onDayPress={(day)=>{selectedDate=day}}                      
                         items={
                             {...itemsObj, ...pair}
                         }
                         renderDay={(day, item)=>{
-                            // console.log(moment().hour(23))
+                            // I dont like that ITEM written above is the entire arr(this.state.itermArr)
+                            // hence why below we are iterating through state
+                            // this prop assumes only to render one item per day....IS THIS THE BEST WAY???
+                            console.log(selectedDate);
                             return (
-                                <View>
-                                    <FlatList
-                                        data={item}
-                                        renderItem={({item})=> 
-                                        <TouchableOpacity
-                                            style={{
-                                                backgroundColor: 'white',
-                                                width: width,
-                                                borderColor: 'black',
-                                                height:75
-                                            }}
-                                        >{item}</TouchableOpacity>}
-                                    />
+                                <View style={{alignItems:'center',backgroundColor:'white'}}>
+                                    <View>
+                                        <Text style={{fontSize:41}}>{moment(day.dateString).format('Do')}</Text>
+                                        <Text style={{fontSize:20}}>{moment(day.dayString).format('MMM')}</Text>
+                                    </View>
+                                    <View>
+                                        {/* <ClientList
+                                            d={day}
+                                            db={this.props.navigation.state.params.db}
+                                        /> */}
+                                        <EmptyDailyPlanner />
+                                    </View>
                                 </View>
                             );
                         }}
-
+                        renderEmptyData={()=>{
+                            return(
+                                <View>
+                                    <View style={{alignItems:'center',backgroundColor:'white'}}>
+                                        <Text style={{fontSize:41}}>{moment(selectedDate.dateString).format('Do')}</Text>
+                                        <Text style={{fontSize:20}}>{moment(selectedDate.dateString).format('MMM')}</Text>
+                                    </View>
+                                    <View>
+                                        <EmptyDailyPlanner />
+                                    </View>
+                                </View>
+                            )
+                        }}
                         theme={{
                             agendaDayTextColor: 'black',
                             agendaDayNumColor: 'green',
                             agendaTodayColor: 'red',
                             agendaKnobColor: 'blue'
                         }}
-
                         style={{}}
                     />
                 </View>

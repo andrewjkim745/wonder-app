@@ -1,8 +1,15 @@
 platform :ios, '9.0'
 require_relative '../node_modules/@react-native-community/cli-platform-ios/native_modules'
 
-target 'wonderFront' do
-  # Pods for wonderFront
+target 'whichdayz' do
+  # Pods for whichdayz
+  # add the Firebase pod for Google Analytics
+pod 'Firebase/Analytics'
+pod 'Firebase/Core'
+pod 'Firebase/Firestore'
+pod 'Firebase/Auth'	
+# add pods for any other desired Firebase products
+# https://firebase.google.com/docs/ios/setup#available-pods
   pod 'FBLazyVector', :path => "../node_modules/react-native/Libraries/FBLazyVector"
   pod 'FBReactNativeSpec', :path => "../node_modules/react-native/Libraries/FBReactNativeSpec"
   pod 'RCTRequired', :path => "../node_modules/react-native/Libraries/RCTRequired"
@@ -30,13 +37,16 @@ target 'wonderFront' do
   pod 'ReactCommon/turbomodule/core', :path => "../node_modules/react-native/ReactCommon"
   pod 'Yoga', :path => '../node_modules/react-native/ReactCommon/yoga'
 
-  pod 'DoubleConversion', :podspec => '../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec'
+  pod 'DoubleConversion', :podspec => './../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec'
+  # pod 'DoubleConversion', :podspec => '../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec'
   pod 'glog', :podspec => '../node_modules/react-native/third-party-podspecs/glog.podspec'
   pod 'Folly', :podspec => '../node_modules/react-native/third-party-podspecs/Folly.podspec'
 
   pod 'RNVectorIcons', :path => '../node_modules/react-native-vector-icons'
 
-  target 'wonderFrontTests' do
+  pod 'react-native-image-picker', :path => '../node_modules/react-native-image-picker'
+
+  target 'whichdayzTests' do
     inherit! :search_paths
     # Pods for testing
   end
@@ -44,10 +54,10 @@ target 'wonderFront' do
   use_native_modules!
 end
 
-target 'wonderFront-tvOS' do
+target 'whichdayz-tvOS' do
   # Pods for wonderFront-tvOS
 
-  target 'wonderFront-tvOSTests' do
+  target 'whichdayz-tvOSTests' do
     inherit! :search_paths
     # Pods for testing
   end

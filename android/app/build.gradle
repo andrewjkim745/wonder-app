@@ -179,6 +179,11 @@ android {
 }
 
 dependencies {
+<<<<<<< HEAD
+    implementation project(':react-native-image-picker')
+=======
+    implementation project(':@react-native-community_cameraroll')
+>>>>>>> 0621b0472979f0d4ff0f00e2ebcae476aeb6138e
     implementation fileTree(dir: "libs", include: ["*.jar"])
     implementation "com.facebook.react:react-native:+"  // From node_modules
 

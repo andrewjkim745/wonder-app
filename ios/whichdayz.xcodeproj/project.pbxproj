@@ -12,14 +12,18 @@
 		13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB11A68108700A75B9A /* LaunchScreen.xib */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		13D933D2FA3679714D10EE58 /* libPods-whichdayz-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C69D9444ACB397783149E037 /* libPods-whichdayz-tvOS.a */; };
 		2D02E4BC1E0B4A80006451C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		2DCD954D1E0B4F2C00145EB5 /* wonderFrontTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* wonderFrontTests.m */; };
-		478EF05AD208E717B4A8455C /* libPods-wonderFront-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E2FE9FB824D35A139460F35E /* libPods-wonderFront-tvOSTests.a */; };
-		68875F16235E26417B0D9541 /* libPods-wonderFrontTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 85F8BB8EA8520880E155E3B7 /* libPods-wonderFrontTests.a */; };
-		8F82D335C28FBDAC448D381E /* libPods-wonderFront.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 541F83BBAB57BC39DC1A24C4 /* libPods-wonderFront.a */; };
-		CAAACD2EA3CBFEB38D46132C /* libPods-wonderFront-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B7B2B8A6927079C9435BA9D4 /* libPods-wonderFront-tvOS.a */; };
+		438127FAA263628931D91000 /* libPods-whichdayz-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6563EDF13AADDFECBAFCFB4D /* libPods-whichdayz-tvOSTests.a */; };
+		5FA67DA824FD3A8200C90E30 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5FA67DA724FD3A8200C90E30 /* GoogleService-Info.plist */; };
+		5FA67DA924FD3A8200C90E30 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5FA67DA724FD3A8200C90E30 /* GoogleService-Info.plist */; };
+		5FA67DAA24FD3A8200C90E30 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5FA67DA724FD3A8200C90E30 /* GoogleService-Info.plist */; };
+		5FA67DAB24FD3A8200C90E30 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5FA67DA724FD3A8200C90E30 /* GoogleService-Info.plist */; };
+		80050908618D8D7CBF240337 /* libPods-whichdayz.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E3B82FF8996836EA3290787 /* libPods-whichdayz.a */; };
+		BCB96D0CD823A1A5C63CE61F /* libPods-whichdayzTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E63CD9A33DD5C95A18475985 /* libPods-whichdayzTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,30 +45,31 @@
 
 /* Begin PBXFileReference section */
 		008F07F21AC5B25A0029DE68 /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.jsbundle; sourceTree = "<group>"; };
-		00E356EE1AD99517003FC87E /* wonderFrontTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = wonderFrontTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		00E356EE1AD99517003FC87E /* whichdayzTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = whichdayzTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* wonderFrontTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = wonderFrontTests.m; sourceTree = "<group>"; };
-		13B07F961A680F5B00A75B9A /* wonderFront.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wonderFront.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07F961A680F5B00A75B9A /* WhichDayz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhichDayz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = wonderFront/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = wonderFront/AppDelegate.m; sourceTree = "<group>"; };
 		13B07FB21A68108700A75B9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = wonderFront/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = wonderFront/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = wonderFront/main.m; sourceTree = "<group>"; };
-		2D02E47B1E0B4A5D006451C7 /* wonderFront-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "wonderFront-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2D02E4901E0B4A5D006451C7 /* wonderFront-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "wonderFront-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2E6838D1AF07DCC7D911F192 /* Pods-wonderFrontTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wonderFrontTests.release.xcconfig"; path = "Target Support Files/Pods-wonderFrontTests/Pods-wonderFrontTests.release.xcconfig"; sourceTree = "<group>"; };
-		4147B865276620AA7040E834 /* Pods-wonderFront-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wonderFront-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-wonderFront-tvOSTests/Pods-wonderFront-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
-		541F83BBAB57BC39DC1A24C4 /* libPods-wonderFront.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-wonderFront.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		57D5E28246B0642088F336B7 /* Pods-wonderFront.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wonderFront.release.xcconfig"; path = "Target Support Files/Pods-wonderFront/Pods-wonderFront.release.xcconfig"; sourceTree = "<group>"; };
-		772C9DCC17AABA1747BA65FA /* Pods-wonderFront-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wonderFront-tvOS.release.xcconfig"; path = "Target Support Files/Pods-wonderFront-tvOS/Pods-wonderFront-tvOS.release.xcconfig"; sourceTree = "<group>"; };
-		830C2BFA4358E107457E0076 /* Pods-wonderFront-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wonderFront-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-wonderFront-tvOS/Pods-wonderFront-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
-		85F8BB8EA8520880E155E3B7 /* libPods-wonderFrontTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-wonderFrontTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		ABDE2E7ACF4A8E58819AAA59 /* Pods-wonderFrontTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wonderFrontTests.debug.xcconfig"; path = "Target Support Files/Pods-wonderFrontTests/Pods-wonderFrontTests.debug.xcconfig"; sourceTree = "<group>"; };
-		B4608C121854A3215DAEE425 /* Pods-wonderFront-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wonderFront-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-wonderFront-tvOSTests/Pods-wonderFront-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
-		B7B2B8A6927079C9435BA9D4 /* libPods-wonderFront-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-wonderFront-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C3BBCACFF5A92504EF1DB6EB /* Pods-wonderFront.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wonderFront.debug.xcconfig"; path = "Target Support Files/Pods-wonderFront/Pods-wonderFront.debug.xcconfig"; sourceTree = "<group>"; };
-		E2FE9FB824D35A139460F35E /* libPods-wonderFront-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-wonderFront-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D421820596C61803071CBEF /* Pods-whichdayzTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-whichdayzTests.release.xcconfig"; path = "Target Support Files/Pods-whichdayzTests/Pods-whichdayzTests.release.xcconfig"; sourceTree = "<group>"; };
+		2D02E47B1E0B4A5D006451C7 /* whichdayz-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "whichdayz-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D02E4901E0B4A5D006451C7 /* whichdayz-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "whichdayz-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4471878B75BE73710E21BBFD /* Pods-whichdayzTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-whichdayzTests.debug.xcconfig"; path = "Target Support Files/Pods-whichdayzTests/Pods-whichdayzTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5FA67DA724FD3A8200C90E30 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		6563EDF13AADDFECBAFCFB4D /* libPods-whichdayz-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-whichdayz-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		708B9FF2FAE4404AA19CF5FF /* Pods-whichdayz-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-whichdayz-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-whichdayz-tvOSTests/Pods-whichdayz-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		726CF2A4734759DF8E1CD5E5 /* Pods-whichdayz-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-whichdayz-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-whichdayz-tvOS/Pods-whichdayz-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
+		8E3B82FF8996836EA3290787 /* libPods-whichdayz.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-whichdayz.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3B240D0AF77E98E3F59B5F4 /* Pods-whichdayz.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-whichdayz.release.xcconfig"; path = "Target Support Files/Pods-whichdayz/Pods-whichdayz.release.xcconfig"; sourceTree = "<group>"; };
+		AA52B831992256A70DEC2A9B /* Pods-whichdayz-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-whichdayz-tvOS.release.xcconfig"; path = "Target Support Files/Pods-whichdayz-tvOS/Pods-whichdayz-tvOS.release.xcconfig"; sourceTree = "<group>"; };
+		C69D9444ACB397783149E037 /* libPods-whichdayz-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-whichdayz-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D224BE3704AE71543FB74A6F /* Pods-whichdayz.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-whichdayz.debug.xcconfig"; path = "Target Support Files/Pods-whichdayz/Pods-whichdayz.debug.xcconfig"; sourceTree = "<group>"; };
+		E63CD9A33DD5C95A18475985 /* libPods-whichdayzTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-whichdayzTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC71C7FCEF3059E527717C2F /* Pods-whichdayz-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-whichdayz-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-whichdayz-tvOSTests/Pods-whichdayz-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
@@ -74,7 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				68875F16235E26417B0D9541 /* libPods-wonderFrontTests.a in Frameworks */,
+				BCB96D0CD823A1A5C63CE61F /* libPods-whichdayzTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,7 +87,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8F82D335C28FBDAC448D381E /* libPods-wonderFront.a in Frameworks */,
+				80050908618D8D7CBF240337 /* libPods-whichdayz.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,7 +95,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CAAACD2EA3CBFEB38D46132C /* libPods-wonderFront-tvOS.a in Frameworks */,
+				13D933D2FA3679714D10EE58 /* libPods-whichdayz-tvOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,7 +103,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				478EF05AD208E717B4A8455C /* libPods-wonderFront-tvOSTests.a in Frameworks */,
+				438127FAA263628931D91000 /* libPods-whichdayz-tvOSTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,6 +135,7 @@
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
+				5FA67DA724FD3A8200C90E30 /* GoogleService-Info.plist */,
 				13B07FB11A68108700A75B9A /* LaunchScreen.xib */,
 				13B07FB71A68108700A75B9A /* main.m */,
 			);
@@ -141,10 +147,10 @@
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				ED2971642150620600B7C4FE /* JavaScriptCore.framework */,
-				541F83BBAB57BC39DC1A24C4 /* libPods-wonderFront.a */,
-				B7B2B8A6927079C9435BA9D4 /* libPods-wonderFront-tvOS.a */,
-				E2FE9FB824D35A139460F35E /* libPods-wonderFront-tvOSTests.a */,
-				85F8BB8EA8520880E155E3B7 /* libPods-wonderFrontTests.a */,
+				8E3B82FF8996836EA3290787 /* libPods-whichdayz.a */,
+				C69D9444ACB397783149E037 /* libPods-whichdayz-tvOS.a */,
+				6563EDF13AADDFECBAFCFB4D /* libPods-whichdayz-tvOSTests.a */,
+				E63CD9A33DD5C95A18475985 /* libPods-whichdayzTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -174,10 +180,10 @@
 		83CBBA001A601CBA00E9B192 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				13B07F961A680F5B00A75B9A /* wonderFront.app */,
-				00E356EE1AD99517003FC87E /* wonderFrontTests.xctest */,
-				2D02E47B1E0B4A5D006451C7 /* wonderFront-tvOS.app */,
-				2D02E4901E0B4A5D006451C7 /* wonderFront-tvOSTests.xctest */,
+				13B07F961A680F5B00A75B9A /* WhichDayz.app */,
+				00E356EE1AD99517003FC87E /* whichdayzTests.xctest */,
+				2D02E47B1E0B4A5D006451C7 /* whichdayz-tvOS.app */,
+				2D02E4901E0B4A5D006451C7 /* whichdayz-tvOSTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -185,14 +191,14 @@
 		B9B12535F0B7E8957F711724 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				C3BBCACFF5A92504EF1DB6EB /* Pods-wonderFront.debug.xcconfig */,
-				57D5E28246B0642088F336B7 /* Pods-wonderFront.release.xcconfig */,
-				830C2BFA4358E107457E0076 /* Pods-wonderFront-tvOS.debug.xcconfig */,
-				772C9DCC17AABA1747BA65FA /* Pods-wonderFront-tvOS.release.xcconfig */,
-				B4608C121854A3215DAEE425 /* Pods-wonderFront-tvOSTests.debug.xcconfig */,
-				4147B865276620AA7040E834 /* Pods-wonderFront-tvOSTests.release.xcconfig */,
-				ABDE2E7ACF4A8E58819AAA59 /* Pods-wonderFrontTests.debug.xcconfig */,
-				2E6838D1AF07DCC7D911F192 /* Pods-wonderFrontTests.release.xcconfig */,
+				D224BE3704AE71543FB74A6F /* Pods-whichdayz.debug.xcconfig */,
+				A3B240D0AF77E98E3F59B5F4 /* Pods-whichdayz.release.xcconfig */,
+				726CF2A4734759DF8E1CD5E5 /* Pods-whichdayz-tvOS.debug.xcconfig */,
+				AA52B831992256A70DEC2A9B /* Pods-whichdayz-tvOS.release.xcconfig */,
+				708B9FF2FAE4404AA19CF5FF /* Pods-whichdayz-tvOSTests.debug.xcconfig */,
+				EC71C7FCEF3059E527717C2F /* Pods-whichdayz-tvOSTests.release.xcconfig */,
+				4471878B75BE73710E21BBFD /* Pods-whichdayzTests.debug.xcconfig */,
+				1D421820596C61803071CBEF /* Pods-whichdayzTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -200,11 +206,11 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		00E356ED1AD99517003FC87E /* wonderFrontTests */ = {
+		00E356ED1AD99517003FC87E /* whichdayzTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "wonderFrontTests" */;
+			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "whichdayzTests" */;
 			buildPhases = (
-				1D7A8C068A8EC3DCA2DAB179 /* [CP] Check Pods Manifest.lock */,
+				A1F09F1F2EBD362C43147990 /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
@@ -214,37 +220,37 @@
 			dependencies = (
 				00E356F51AD99517003FC87E /* PBXTargetDependency */,
 			);
-			name = wonderFrontTests;
+			name = whichdayzTests;
 			productName = wonderFrontTests;
-			productReference = 00E356EE1AD99517003FC87E /* wonderFrontTests.xctest */;
+			productReference = 00E356EE1AD99517003FC87E /* whichdayzTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		13B07F861A680F5B00A75B9A /* wonderFront */ = {
+		13B07F861A680F5B00A75B9A /* whichdayz */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "wonderFront" */;
+			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "whichdayz" */;
 			buildPhases = (
-				C376F666F815B6FB3BAF1E60 /* [CP] Check Pods Manifest.lock */,
+				40D4085F5276BDF6DACC3E04 /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				9889925F7D1A7CED2166EF44 /* [CP] Copy Pods Resources */,
+				FCAA1B881EB366792E37545C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = wonderFront;
+			name = whichdayz;
 			productName = wonderFront;
-			productReference = 13B07F961A680F5B00A75B9A /* wonderFront.app */;
+			productReference = 13B07F961A680F5B00A75B9A /* WhichDayz.app */;
 			productType = "com.apple.product-type.application";
 		};
-		2D02E47A1E0B4A5D006451C7 /* wonderFront-tvOS */ = {
+		2D02E47A1E0B4A5D006451C7 /* whichdayz-tvOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "wonderFront-tvOS" */;
+			buildConfigurationList = 2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "whichdayz-tvOS" */;
 			buildPhases = (
-				0A716EA29A01260E3DBF0657 /* [CP] Check Pods Manifest.lock */,
+				843CBFE0E4899249C74A44CC /* [CP] Check Pods Manifest.lock */,
 				FD10A7F122414F3F0027D42C /* Start Packager */,
 				2D02E4771E0B4A5D006451C7 /* Sources */,
 				2D02E4781E0B4A5D006451C7 /* Frameworks */,
@@ -255,16 +261,16 @@
 			);
 			dependencies = (
 			);
-			name = "wonderFront-tvOS";
+			name = "whichdayz-tvOS";
 			productName = "wonderFront-tvOS";
-			productReference = 2D02E47B1E0B4A5D006451C7 /* wonderFront-tvOS.app */;
+			productReference = 2D02E47B1E0B4A5D006451C7 /* whichdayz-tvOS.app */;
 			productType = "com.apple.product-type.application";
 		};
-		2D02E48F1E0B4A5D006451C7 /* wonderFront-tvOSTests */ = {
+		2D02E48F1E0B4A5D006451C7 /* whichdayz-tvOSTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "wonderFront-tvOSTests" */;
+			buildConfigurationList = 2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "whichdayz-tvOSTests" */;
 			buildPhases = (
-				6DED579C66602271932613A0 /* [CP] Check Pods Manifest.lock */,
+				F2519FFA729474D50C76923A /* [CP] Check Pods Manifest.lock */,
 				2D02E48C1E0B4A5D006451C7 /* Sources */,
 				2D02E48D1E0B4A5D006451C7 /* Frameworks */,
 				2D02E48E1E0B4A5D006451C7 /* Resources */,
@@ -274,9 +280,9 @@
 			dependencies = (
 				2D02E4921E0B4A5D006451C7 /* PBXTargetDependency */,
 			);
-			name = "wonderFront-tvOSTests";
+			name = "whichdayz-tvOSTests";
 			productName = "wonderFront-tvOSTests";
-			productReference = 2D02E4901E0B4A5D006451C7 /* wonderFront-tvOSTests.xctest */;
+			productReference = 2D02E4901E0B4A5D006451C7 /* whichdayz-tvOSTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -286,14 +292,15 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0940;
-				ORGANIZATIONNAME = Facebook;
+				ORGANIZATIONNAME = workingHeads;
 				TargetAttributes = {
 					00E356ED1AD99517003FC87E = {
 						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = 63A77M3Z94;
 						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
 					13B07F861A680F5B00A75B9A = {
-						DevelopmentTeam = FZRD5XN7QC;
+						DevelopmentTeam = 63A77M3Z94;
 					};
 					2D02E47A1E0B4A5D006451C7 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -306,7 +313,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "wonderFront" */;
+			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "whichdayz" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -320,10 +327,10 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				13B07F861A680F5B00A75B9A /* wonderFront */,
-				00E356ED1AD99517003FC87E /* wonderFrontTests */,
-				2D02E47A1E0B4A5D006451C7 /* wonderFront-tvOS */,
-				2D02E48F1E0B4A5D006451C7 /* wonderFront-tvOSTests */,
+				13B07F861A680F5B00A75B9A /* whichdayz */,
+				00E356ED1AD99517003FC87E /* whichdayzTests */,
+				2D02E47A1E0B4A5D006451C7 /* whichdayz-tvOS */,
+				2D02E48F1E0B4A5D006451C7 /* whichdayz-tvOSTests */,
 			);
 		};
 /* End PBXProject section */
@@ -333,6 +340,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5FA67DA924FD3A8200C90E30 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,6 +350,7 @@
 			files = (
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
+				5FA67DA824FD3A8200C90E30 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -350,6 +359,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */,
+				5FA67DAA24FD3A8200C90E30 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -357,6 +367,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5FA67DAB24FD3A8200C90E30 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -377,50 +388,6 @@
 			shellPath = /bin/sh;
 			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
 		};
-		0A716EA29A01260E3DBF0657 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-wonderFront-tvOS-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		1D7A8C068A8EC3DCA2DAB179 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-wonderFrontTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 		2D02E4CB1E0B4B27006451C7 /* Bundle React Native Code And Images */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -435,7 +402,7 @@
 			shellPath = /bin/sh;
 			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
 		};
-		6DED579C66602271932613A0 /* [CP] Check Pods Manifest.lock */ = {
+		40D4085F5276BDF6DACC3E04 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -450,20 +417,86 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-wonderFront-tvOSTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-whichdayz-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		9889925F7D1A7CED2166EF44 /* [CP] Copy Pods Resources */ = {
+		843CBFE0E4899249C74A44CC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-whichdayz-tvOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A1F09F1F2EBD362C43147990 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-whichdayzTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F2519FFA729474D50C76923A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-whichdayz-tvOSTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FCAA1B881EB366792E37545C /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-wonderFront/Pods-wonderFront-resources.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-whichdayz/Pods-whichdayz-resources.sh",
 				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/AntDesign.ttf",
 				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Entypo.ttf",
 				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf",
@@ -480,6 +513,7 @@
 				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Octicons.ttf",
 				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/SimpleLineIcons.ttf",
 				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Zocial.ttf",
+				"${PODS_CONFIGURATION_BUILD_DIR}/gRPC-C++/gRPCCertificates-Cpp.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
@@ -499,32 +533,11 @@
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Octicons.ttf",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SimpleLineIcons.ttf",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Zocial.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/gRPCCertificates-Cpp.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-wonderFront/Pods-wonderFront-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C376F666F815B6FB3BAF1E60 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-wonderFront-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-whichdayz/Pods-whichdayz-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FD10A7F022414F080027D42C /* Start Packager */ = {
@@ -607,12 +620,12 @@
 /* Begin PBXTargetDependency section */
 		00E356F51AD99517003FC87E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 13B07F861A680F5B00A75B9A /* wonderFront */;
+			target = 13B07F861A680F5B00A75B9A /* whichdayz */;
 			targetProxy = 00E356F41AD99517003FC87E /* PBXContainerItemProxy */;
 		};
 		2D02E4921E0B4A5D006451C7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2D02E47A1E0B4A5D006451C7 /* wonderFront-tvOS */;
+			target = 2D02E47A1E0B4A5D006451C7 /* whichdayz-tvOS */;
 			targetProxy = 2D02E4911E0B4A5D006451C7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -632,9 +645,11 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = ABDE2E7ACF4A8E58819AAA59 /* Pods-wonderFrontTests.debug.xcconfig */;
+			baseConfigurationReference = 4471878B75BE73710E21BBFD /* Pods-whichdayzTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				DEVELOPMENT_TEAM = 63A77M3Z94;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -649,16 +664,18 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/wonderFront.app/wonderFront";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/whichdayz.app/whichdayz";
 			};
 			name = Debug;
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2E6838D1AF07DCC7D911F192 /* Pods-wonderFrontTests.release.xcconfig */;
+			baseConfigurationReference = 1D421820596C61803071CBEF /* Pods-whichdayzTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = 63A77M3Z94;
 				INFOPLIST_FILE = wonderFrontTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -669,54 +686,56 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/wonderFront.app/wonderFront";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/whichdayz.app/whichdayz";
 			};
 			name = Release;
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C3BBCACFF5A92504EF1DB6EB /* Pods-wonderFront.debug.xcconfig */;
+			baseConfigurationReference = D224BE3704AE71543FB74A6F /* Pods-whichdayz.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CURRENT_PROJECT_VERSION = 1;
-				DEAD_CODE_STRIPPING = NO;
-				DEVELOPMENT_TEAM = FZRD5XN7QC;
+				CURRENT_PROJECT_VERSION = 2;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = 63A77M3Z94;
 				INFOPLIST_FILE = wonderFront/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 1.1.3;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = wonderFront;
+				PRODUCT_BUNDLE_IDENTIFIER = org.reactjs.native.example.whichday;
+				PRODUCT_NAME = WhichDayz;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 57D5E28246B0642088F336B7 /* Pods-wonderFront.release.xcconfig */;
+			baseConfigurationReference = A3B240D0AF77E98E3F59B5F4 /* Pods-whichdayz.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = FZRD5XN7QC;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = 63A77M3Z94;
 				INFOPLIST_FILE = wonderFront/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 1.1.3;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = wonderFront;
+				PRODUCT_BUNDLE_IDENTIFIER = org.reactjs.native.example.whichday;
+				PRODUCT_NAME = WhichDayz;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
 		};
 		2D02E4971E0B4A5E006451C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 830C2BFA4358E107457E0076 /* Pods-wonderFront-tvOS.debug.xcconfig */;
+			baseConfigurationReference = 726CF2A4734759DF8E1CD5E5 /* Pods-whichdayz-tvOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -744,7 +763,7 @@
 		};
 		2D02E4981E0B4A5E006451C7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 772C9DCC17AABA1747BA65FA /* Pods-wonderFront-tvOS.release.xcconfig */;
+			baseConfigurationReference = AA52B831992256A70DEC2A9B /* Pods-whichdayz-tvOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -772,7 +791,7 @@
 		};
 		2D02E4991E0B4A5E006451C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B4608C121854A3215DAEE425 /* Pods-wonderFront-tvOSTests.debug.xcconfig */;
+			baseConfigurationReference = 708B9FF2FAE4404AA19CF5FF /* Pods-whichdayz-tvOSTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
@@ -792,14 +811,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.wonderFront-tvOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/wonderFront-tvOS.app/wonderFront-tvOS";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/whichdayz-tvOS.app/whichdayz-tvOS";
 				TVOS_DEPLOYMENT_TARGET = 10.1;
 			};
 			name = Debug;
 		};
 		2D02E49A1E0B4A5E006451C7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4147B865276620AA7040E834 /* Pods-wonderFront-tvOSTests.release.xcconfig */;
+			baseConfigurationReference = EC71C7FCEF3059E527717C2F /* Pods-whichdayz-tvOSTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
@@ -819,7 +838,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.wonderFront-tvOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/wonderFront-tvOS.app/wonderFront-tvOS";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/whichdayz-tvOS.app/whichdayz-tvOS";
 				TVOS_DEPLOYMENT_TARGET = 10.1;
 			};
 			name = Release;
@@ -870,6 +889,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				"INFOPLIST_FILE[sdk=*]" = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -916,6 +936,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				"INFOPLIST_FILE[sdk=*]" = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
@@ -926,7 +947,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "wonderFrontTests" */ = {
+		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "whichdayzTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				00E356F61AD99517003FC87E /* Debug */,
@@ -935,7 +956,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "wonderFront" */ = {
+		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "whichdayz" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				13B07F941A680F5B00A75B9A /* Debug */,
@@ -944,7 +965,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "wonderFront-tvOS" */ = {
+		2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "whichdayz-tvOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2D02E4971E0B4A5E006451C7 /* Debug */,
@@ -953,7 +974,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "wonderFront-tvOSTests" */ = {
+		2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "whichdayz-tvOSTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2D02E4991E0B4A5E006451C7 /* Debug */,
@@ -962,7 +983,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "wonderFront" */ = {
+		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "whichdayz" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				83CBBA201A601CBA00E9B192 /* Debug */,
