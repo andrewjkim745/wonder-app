@@ -48,6 +48,7 @@ pod 'Firebase/Auth'
 
   pod 'BVLinearGradient', :path => '../node_modules/react-native-linear-gradient'
 
+  pod 'RNVectorIcons', :path => '../node_modules/react-native-vector-icons'
 
   target 'whichdayzTests' do
     inherit! :search_paths
